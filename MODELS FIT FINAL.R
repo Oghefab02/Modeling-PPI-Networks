@@ -1,3 +1,5 @@
+library(ergm)
+
 # FITS
 #1
 m0 <- ergm(g_net ~ edges)
