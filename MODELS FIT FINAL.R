@@ -139,3 +139,26 @@ m6 <- ergm.tapered(g_net ~ edges +
                    verbose = TRUE)
 
 summary(m6)
+
+
+###### goodness of fit tests
+
+good_m1 <- gof(m1)
+plot(good_m1)
+mcmc.diagnostics(m1)
+
+good_m2 <- gof(m2)
+plot(good_m2)
+mcmc.diagnostics(m2)
+
+good_m3 <- gof(m3)
+plot(good_m3)
+mcmc.diagnostics(m3)
+
+good_m4 <- gof(m4)
+plot(good_m4)
+mcmc.diagnostics(m4)
+
+good_m5 <- gof(m5)
+plot(good_m5)
+mcmc.diagnostics(m5)
