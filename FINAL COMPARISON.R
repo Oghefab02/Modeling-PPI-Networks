@@ -545,9 +545,7 @@ lift_plot <- ggplot(lift_df,
 
 lift_plot
 
-#####################################################
 # TOP k PRECISION
-####################################################
 
 prediction %>%
   group_by(model) %>%
