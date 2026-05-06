@@ -95,7 +95,7 @@ AIC(m0, m1, m2, m3, m4)
 AIC(m0) - AIC(m4)
 
 
-# m5 
+###### m5 and m6 are models not used within the comparison as they proved to be more useful only for prediction
 
 m5 <- ergm.tapered(g_net ~ edges +
                      gwdegree(1.25, fixed = TRUE) +
@@ -117,9 +117,6 @@ m5 <- ergm.tapered(g_net ~ edges +
                      MCMC.burnin = 10000
                    ),
                    verbose = TRUE)
-
-
-###### m6 is a model not used within the comparison as it proved to be more useful only for prediction
 
 m6 <- ergm.tapered(g_net ~ edges +
                      gwnsp(2, fixed = TRUE) +
