@@ -87,10 +87,7 @@ plot(good_m4)
 good_m4
 mcmc.diagnostics(m4)
 
-saveRDS(m4, file = "ergm_final_6.rds")
-saveRDS(good_m4, file = "ergm_final_5_gof_better_v1.rds")
-
-
+# reload for when i close R
 m4 <- readRDS("ergm_final_5_better_v1.rds")
 good_m4 <- readRDS("ergm_final_5_gof_better_v1.rds")
 
